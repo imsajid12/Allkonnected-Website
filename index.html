@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -19,6 +19,10 @@
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     -->
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        AOS.init();
+    </script>
 
     <title>AllKonnected</title>
 </head>
@@ -44,7 +48,7 @@
                     </a>
                 </ul>
             </nav>
-            <div class="text-box">
+            <div class="text-box" data-aos="fade-left" data-aos-easing="linear">
                 <h2>Welcome to Allkonnected,</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quo, dolor error cumque quis quos
                     laudantium voluptates similique esse iure veniam vero delectus tenetur harum beatae incidunt porro
@@ -53,16 +57,16 @@
                     obcaecati eveniet natus fugiat, repellat nulla impedit, nisi corrupti non enim aliquam minima
                     excepturi repellendus laboriosam sunt?
                 </p>
-                <a href="#id-contact" class="btn btn-green">Reach Us</a>
+                <a href="#id-contact" class="btn btn-green" data-aos="fade-up-left">Reach Us</a>
             </div>
         </header>
 
 
         <section class="about-us" id="id-about">
-            <div class="about-us-img">
+            <div class="about-us-img" data-aos="fade-down" data-aos-easing="ease-in-out">
                 <img src="img/Meeting.png" alt="Meeting">
             </div>
-            <div class="about-us-text-box">
+            <div class="about-us-text-box" data-aos="slide-right" data-aos-easing="ease-in-out">
                 <h2>About Us</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quo, dolor error cumque quis quos
                     laudantium voluptates similique esse iure veniam vero delectus tenetur harum beatae incidunt porro
@@ -77,7 +81,7 @@
 
         <section class="services" id="id-services">
             <h2>Our Services</h2>
-            <div class="services-box">
+            <div class="services-box" data-aos="zoom-in" data-aos-easing="linear">
                 <div class="card">
                     <img src="img/website-development.png" alt="website-developmen">
                     <div class="card-body">
@@ -122,8 +126,8 @@
         </section>
 
 
-        <section class="contact-us animate__animated animate__bounceInLeft" id="id-contact">
-            <div class="company-info">
+        <section class="contact-us" id="id-contact" data-aos-easing="linear">
+            <div class="company-info" data-aos="flip-up">
                 <h2>AllKonnected</h2>
                 <ul>
                     <li><i class="fa fa-road"></i> Linking Rd, Santacruz West, Mumbai - 400 054</li>
@@ -131,7 +135,7 @@
                     <li><i class="fa fa-envelope"></i> allkonnect10@gmail.com</li>
                 </ul>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="flip-down">
                 <h3>Email Us</h3>
                 <form>
                     <p>
@@ -210,15 +214,21 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
     <script src="js/app.js"></script>
 
